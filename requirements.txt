@@ -1,0 +1,44 @@
+# Nova Voice Assistant — Python Dependencies
+#
+# Install all dependencies:
+#   pip install -r requirements.txt
+#
+# WINDOWS NOTE: PyAudio requires a pre-built wheel.
+# If the above fails for PyAudio, run:
+#   pip install pipwin
+#   pipwin install pyaudio
+#
+# Or download the wheel from https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio
+
+# ── Core ──────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# ── GUI ───────────────────────────────────────────────────────────────────
+customtkinter>=5.2.0
+
+# ── Speech Recognition ────────────────────────────────────────────────────
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.13
+
+# Faster-Whisper (local high-accuracy STT)
+# Requires C++ runtime on Windows and may need ctranslate2 wheel
+faster-whisper>=1.0.0
+
+# ── Text-to-Speech ────────────────────────────────────────────────────────
+pyttsx3>=2.90
+
+# ── AI / NLP ──────────────────────────────────────────────────────────────
+openai>=1.14.0
+
+# ── HTTP / Networking ─────────────────────────────────────────────────────
+requests>=2.31.0
+urllib3>=2.0.0
+
+# ── Utilities ─────────────────────────────────────────────────────────────
+# (No additional utility deps needed — uses stdlib: sqlite3, threading, asyncio)
+
+# ── Testing ───────────────────────────────────────────────────────────────
+pytest>=7.4.0
+pytest-cov>=4.1.0

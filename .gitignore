@@ -1,0 +1,15 @@
+# Environments
+.venv/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Logs and Databases
+logs/
+*.db
+data/nova.db
+
+# Secrets
+.env
