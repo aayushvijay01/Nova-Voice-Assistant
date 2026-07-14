@@ -80,7 +80,7 @@ nova_voice_assistant/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourname/nova-voice-assistant
+git clone https://github.com/aayushvijay01/nova-voice-assistant
 cd nova_voice_assistant
 
 # Create a virtual environment (recommended)

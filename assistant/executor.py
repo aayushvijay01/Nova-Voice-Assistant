@@ -108,8 +108,7 @@ class CommandExecutor:
         self._safe_register_module("commands.calculator", "calculate", "handle")
         self._safe_register_module("commands.reminder", "set_reminder", "handle")
         self._safe_register_module("commands.system_control", "system_control", "handle")
-        self._safe_register_module("commands.system_control", "open_application", "handle_open")
-        self._safe_register_module("commands.web_search", "web_search", "handle")
+        self._safe_register_module("commands.open_app", "open_application", "handle")
 
         # Inline lightweight handlers for time/date/chitchat
         self._register_time_date_handlers()
